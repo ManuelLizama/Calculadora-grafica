@@ -86,6 +86,7 @@ def Functional_Output(Validate_Input):
                 Validate_Output -=1
             receive_value = Validate_Input[Intake_Input:fin]
             receive_input = calcula(receive_value.replace('{','').replace('}',''))
+            print (receive_input)
             Validate_Input = Validate_Input.replace(receive_value,receive_input)
         DisplayAnswer = float(AddFunction(Validate_Input))
     except:
@@ -112,7 +113,7 @@ def AddFunction(Validate_Input):
                 for index in range(len(add_selection)):
                     add_selection[index]= str(float(add_selection[index])+float(add_selection[index+1]))
                     selection.pop(index+1)
-                    break
+                    break;
     return add_selection[0]
 
 root=tkinter.Tk()

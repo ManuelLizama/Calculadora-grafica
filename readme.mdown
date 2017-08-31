@@ -1,5 +1,8 @@
-### Calculadora grafica 
+# Calculadora grafica 
 
 ## Manuel Lizama
 
 calculadora para analisis de software
+lenguaje python 3.6
+Biblioteca grafica Tkinter
+
